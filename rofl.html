@@ -1,0 +1,965 @@
+<script charset="utf-8" src="https://api-maps.yandex.ru/1.1/index.xml"></script>
+<link rel="stylesheet" href="https://api-maps.yandex.ru/1.1/_YMaps.css?v=1.1.21-58">
+<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/1.1/_YMaps.js?v=1.1.21-58"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+    var flag = true;
+	$(window).mouseout(function(e){
+        if(e.pageY - $(window).scrollTop() < 1 && flag == true){
+            $('.fadepopup, .eoxp').fadeIn(300);
+              $('.eeee').fadeIn(300);
+            flag = false;
+        }
+    })
+    </script>
+
+  <script type="text/javascript">
+    $(document).ready( 
+        function() { 
+            $(".eeee").click( function() { 
+                $(".eeee").addClass("actsss"); // добавляем в нажатую ссылку класс act  
+                $(".fadepopup").addClass("actsss"); // добавляем в нажатую ссылку класс act  
+                $(".fadepopup").removeClass("xxxc"); // добавляем в нажатую ссылку класс act 
+                $(".eeee").removeClass("xxxc"); // добавляем в нажатую ссылку класс act 
+                $(".hikj").removeClass("actss"); // добавляем в нажатую ссылку класс act
+                $("body").removeClass("modal-show"); // добавляем в нажатую ссылку класс act
+                } 
+            );  
+        } 
+    ); 
+  </script>
+  
+<style type="text/css">.oui {    width: 781px;    height: 460px;    /*background: #7ca0cc;*/    background: rgba(60,114,181,1);    background: -moz-linear-gradient(-45deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(60,114,181,1)), color-stop(100%, rgba(123,159,204,1)));    background: -webkit-linear-gradient(-45deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    background: -o-linear-gradient(-45deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    background: -ms-linear-gradient(-45deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    background: linear-gradient(135deg, rgba(60,114,181,1) 0%, rgba(123,159,204,1) 100%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c72b5', endColorstr='#7b9fcc', GradientType=1 );    font-family: Roboto!important;    position: relative;    border: 5px solid #dddddd;}
+.actsss {    display: none !important;}
+.eeee {    background-color: rgba(0, 0, 0, 0.7);    display: none;    width: 100%;    height: 100%;    z-index: 333;    position: fixed;        cursor: pointer;}
+.kmacb-form2 .modal-block {    left: 50%;    margin-left: -396px;    position: fixed;    top: 6%;    z-index: 8105;    width: 792px;    height: 470px;    border-radius: 5px;    border: 0;    box-shadow: none;    font-family: Arial, sans-serif;    overflow: hidden;    color: #222;}
+p.ouimainp {   margin:0 !important; font-size: 30px;    font-family: Arial,Helvetica,sans-serif;    font-weight: bold;    padding-top: 23px;    display: block;    color: #fff;    text-align: center;}
+.ouimain-text-img {    display: block;    width: 90%;    padding: 0 5%;   }
+.ouimain-img {    float: left;    display: block;    width: 32%;    margin: 0 auto;}
+.ouimain-img img {    display: block;    width: 100%;    margin: 0 auto;}
+.ouimain-text {    display: block;    width: 62%;    float: right;    margin-left: 5%;    margin-top: 30px;}
+.ouimain-text p {  margin:0 !important; font-family: Arial,Helvetica,sans-serif;    line-height: 1.5;    text-align: left;    color: #fff;    font-size: 22px;    padding-bottom: 5px;}
+.ouimain-text-img:after {    content: '';    display: block;    clear: both;}
+.kmacb-form form {    margin: 30px 0;    text-align: center;    width: 100%;    height: auto;    background: 0;    position: static;    padding: 0;    border: 0;}
+.kmacb-form2 form * {    box-sizing: border-box;}.kmacb-form form input {    float: none;}
+.kmacb-form form input[type=text] {    height: 56px;    line-height: 56px;    color: #222;    border: 2px solid #bdbdbd;    padding: 0 15px;    width: 100%;    display: inline-block;    text-indent: 0;    border-radius: 3px;    background: #fff;    font-size: 20px;    font-style: normal;    box-shadow: none;    position: static;    margin: 0 0 10px 0;}
+.kmacb-form input[type=button] {    position: absolute;    cursor: pointer;    border: 1px solid rgba(73,155,234,1);    background: rgba(222,69,92,1);    background: -moz-linear-gradient(-45deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(222,69,92,1)), color-stop(13%, rgba(222,69,92,1)), color-stop(76%, rgba(192,31,55,1)), color-stop(100%, rgba(192,31,55,1)));    background: -webkit-linear-gradient(-45deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -o-linear-gradient(-45deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -ms-linear-gradient(-45deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: linear-gradient(135deg, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de455c', endColorstr='#c01f37', GradientType=1 );    color: #fff;    padding: 0 10px;    text-transform: uppercase;    line-height: 60px;    vertical-align: top;    display: block;    text-indent: 0;    font-style: normal;    font-family: Arial,Helvetica,sans-serif;    width: 402px;    height: 64px;    opacity: 1;    bottom: 29px;    margin-left: 195px;    text-align: center;    font-size: 28px;    font-weight: 900;    border-radius: 10px;    transition: 0.6s ease;}
+.kmacb-form form input[type=submit]:hover {    background: rgba(222,69,92,1);    background: -moz-linear-gradient(top, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(222,69,92,1)), color-stop(13%, rgba(222,69,92,1)), color-stop(76%, rgba(192,31,55,1)), color-stop(100%, rgba(192,31,55,1)));    background: -webkit-linear-gradient(top, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -o-linear-gradient(top, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: -ms-linear-gradient(top, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    background: linear-gradient(to bottom, rgba(222,69,92,1) 0%, rgba(222,69,92,1) 13%, rgba(192,31,55,1) 76%, rgba(192,31,55,1) 100%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de455c', endColorstr='#c01f37', GradientType=0 );}
+</style>
+
+<div id="hiddenDiv" style="display:none;"></div>
+<div style="display:none" class="fadepopup">       
+    <div id="kmacb-form" class="modalx kmacb-form kmacb-form2 eoxp">
+        <div class="modal-block">
+            <div class="oui">
+                <div class="ouimain">
+                    <p class="ouimainp">Вы из г.<span class="geocity"><script>document.write(((YMaps.location.city)?(YMaps.location.city):'Москва'));</script></span>? Подождите!</p>
+                    <div class="ouimain-text-img">
+                        <div class="ouimain-img"> 
+                            <img src="./files/product.png">
+                        </div>
+                        <div class="ouimain-text">
+                            <p>Для Вас сейчас действует специальное ограниченное предложение</p>
+                            <p>
+                              Только до <script>d=new Date();p=new Date(d.getTime()+(86400*1000*1));monthA='января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(',');document.write(p.getDate()+' '+monthA[p.getMonth()]+' '+p.getFullYear());</script> вы можете получить HONDRONEX по акции совершенно бесплатно!
+
+                            </p>
+                        </div>
+                    </div>
+                    <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><input type="button" value="Узнать подробнее"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="eeee" style="display: none;"></div><!DOCTYPE html>
+<html class="" lang="ru-RU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	 <link rel="shortcut icon" href="https://medicinik-ac.ru/v1529_ru_sustav_Хондронекс_box_v2/men_guard.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./files/css.css">	
+    <title>Больные суставы — причина рака и инвалидности!</title>
+    <link rel="stylesheet" id="lh-slider-styles-css" href="./files/all.min.css" type="text/css" media="all"> 
+    <link rel="stylesheet" id="vendors-css" href="./files/vendors.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="all-css" href="./files/all.min_001.css" type="text/css" media="all">
+    <link rel="stylesheet" id="lh_viewed_widget-css" href="./files/widgets.css" type="text/css" media="all">
+    <link rel="stylesheet" id="fonts-css" href="./files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="fonts-css" href="./files/ff.css" type="text/css" media="all">
+<link rel="stylesheet" href="./files/styles.css">
+
+<style>
+a1 {
+	color: #FF0000;
+	text-decoration: none;
+}
+a1:visited {
+	color: #800080;
+}	
+a1:hover {
+	color: #800000;
+	text-decoration: underline;
+}
+</style>
+<style>
+.rub-ramka {
+            margin-top: 18px;
+            margin-bottom: 18px;
+            background: rgba(189, 61, 77, 0.04);
+            padding: 15px 10px 0px !important;
+            color: rgb(8, 8, 8);
+            font-size: 18px;
+            font-family: roboto condensed, arial;
+            border: 2px solid;
+            border-radius: 4px;
+            border-color: #bd3d4d;
+            text-shadow: 0 0 0 #616161;
+            text-indent: 0 !important;
+            text-align: left;
+        }
+</style>
+
+<link rel="stylesheet" href="./files/styles.css">
+<link rel="stylesheet" href="./files/boxes_style.css" type="text/css">
+<link href="./files/jsdguifgwsiugiqdgqweifgdqwdqfd.css" type="text/css" rel="stylesheet">
+<script async="" src="./files/tag.js.Без названия"></script>
+
+<script src="./files/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">/*<![CDATA[*/
+var __ai={a:(new Date).getTime(),x:function(a,b){window[/*@cc_on !@*/0?"attachEvent":"addEventListener"](/*@cc_on "on"+@*/a,b,!1)},z:document};__ai.x("beforeunload",function(){var a=window,c,k=__ai.z,e,b=function(a,c){for(var b=__ai.z,e=b.getElementsByTagName(a),g=0,f=[],d,b=b.domain;d=e[g++];)(d=d[c?1<c?"href":"data":"src"])&&(0>d.indexOf(b)||12<d.indexOf(b))&&!d.match(/^(about|chrome-extension|javascript|localhost|mailto|skype|tel):/)&&f.push(d.replace(/.*\/\/([^\/]+).*/,"$1").replace(/(.+\.)?([^\.]+)\.([^\.]+)$/,"$2.$3"));return f.filter(function(e,i,f){return f.lastIndexOf(e)===i}).join("@")},h=(new Date).getTime(),g,f,a=a.performance||a.msPerformance||a.webkitPerformance||a.mozPerformance;"undefined"!==typeof a?(a=a.timing,e=a.responseEnd,g=a.domContentLoadedEventStart,f=a.loadEventStart,j=a.connectEnd,i=a.responseStart,l=a.connectStart,m=a.domainRedirectEnd,n=a.secureConnectionStart,o=a.loadEventEnd,p=a.domContentLoadedEventEnd,q=a.msFirstPaint,q=q=="indefined"?a.getEntriesByType("paint")[0]:q,x=__ai.b?__ai.b-__ai.a:0,y=__ai.c?__ai.c-__ai.a:0,c=[m?m-a.domainRedirectStart:0,l-a.domainLookupStart,j-l,n?j-n:0,i-j,e-i,(g?g:h)-e,(f?f:h)-e,(o?o:h)-e,(p?p:h)-e,(q?q:h)-e]):c=[0,0,0,0,0,0,x,y,y,x,x];try{c=c.concat(k.documentElement.innerHTML.length,b("script"),b("iframe"),b("embed"),b("object",1),b("a",2))}catch(e){}(new Image).src="/airee_rum/"+c.join(",")});__ai.x("load",function(){__ai.c=(new Date).getTime()});__ai.z.addEventListener?__ai.z.addEventListener("DOMContentLoaded",function(){__ai.b=(new Date).getTime()},!1):__ai.z.attachEvent("onreadystatechange",function(){"loading"!==__ai.z.readyState?__ai.b=(new Date).getTime():setTimeout(arguments.callee,10)})
+/*]]>*/</script></head>
+<body style="position: relative;" class="post-template-default single single-post postid-966304 single-format-standard" itemscope="" data-gr-c-s-loaded="true">
+<div class="eeee actsss" style="display: block;"></div>
+
+
+  <!-- Шапка Mobile--> 
+  <div class="mobile-bar">
+    <div class="mobile-bar__menu-icon">    </div>
+    <div class="mobile-bar__lh-logo" style="margin-top: 4px;">
+      <div id="mobile-bar-logo" class="mobile-bar__lh-logo__link">
+        <img src="./files/logo.png" alt="" class="mobile-bar__lh-logo__img">      </div>
+    </div>
+    <div class="mobile-bar__search-icon">
+      <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">
+        <img src="./files/auth-icon.svg" alt="">      </a>    </div>    
+  </div>
+  <!-- Шапка Mobile-->
+  <!-- Шапка Desctop-->
+  <header class="top-menu--wrapper" style="position: fixed; width: 100%; z-index: 10; top: 0px;">    
+    <nav class="top-menu primary-menu" role="navigation">
+      <ul style="opacity: 1;" id="primary-menu-list" class="primary-menu__list">
+		  <li style="display: list-item;">
+          <a style="color:  !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b><font size="4" color="#FFC0CB">XVIII Международная медицинская конфереция, Барнаул</font></b></a>        </li>
+        <li style="display: list-item;">
+          <a style="color:  !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Секции</a>        </li>
+        <li style="display: list-item;">
+          <a style="color:  !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Спикеры</a>        </li>
+        <li style="display: list-item;">
+          <a style="color:  !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Выступления</a>        </li>
+        <li style="display: list-item;">
+          <a style="color:  !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Почетные гости</a>        </li>
+      </ul>  
+    </nav>
+    <nav class="top-menu secondary-menu" role="navigation">
+      <ul style="opacity: 1;" id="secondary-menu-list" class="secondary-menu__list">
+        <li style="">
+        <a style="color: !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Новости</a>        </li> 
+        <li style="">
+          <a style="color: !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Пресса</a>        </li>
+        <li style="">
+          <a style="color: !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Блогеры</a>        </li>
+        <li style="">
+          <a style="color: !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Доклады</a>        </li>
+        <li style="">
+          <a style="color: !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Распределение по секциям</a>        </li>
+        <li style="">
+          <a style="color: !important;" href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Контакты</a>        </li>
+      </ul>
+    </nav>  
+  </header>
+  <!-- Шапка Desctop-->
+	<div class="single-container">
+    <div class="single__content-and-sidebar" id="single-content-and-sidebar">
+      <div class="single__content--wrapper">
+        <div class="single-post-header" id="single-post-header">
+          <div class="single-post-header__pattern img-is-loaded" id="single-post-header-pattern">
+            <img src="./files/main-photo.jpg" id="single-post-header-pattern-image">          </div>
+          <div class="single-post-header__text-block">
+            <h1 class="single__title" itemprop="headline">ОТКРЫТАЯ СЕКЦИЯ "ФАРМАЦЕВТИКА РОССИИ 2020"
+			  Как калечат людей с больными суставами, скрывая правду.</h1>
+			 Модератор: Ольга Скабеева          </div>
+        </div>
+        <div class="single__content">
+			<h3>Ольга Скабеева: Эта передача о том, как калечат людей с больными суставами, скрывая от них правду, а также о препарате от Национального НИИ Ревматологии, который может спасти миллионы жизней.
+				<br><br>
+				Почему лекарство, которое распространяется по сути <font color="red">БЕСПЛАТНО</font>, не попадает к людям? Кто виноват? Разбираемся.</h3>
+		  <center>
+              <img src="./files/g.jpg" style="height: auto; width: 100%; max-width: 533px;">
+            </center> 
+			<br>
+			<font color="red"><b>Почему аптеки предлагают устаревшие и опасные лекарства, при этом скрывая от людей новый препарат от Национального НИИ Ревматологии? Как получается, что аптечная мафия делает миллионы на здоровье людей, губя их здоровье?</b></font>
+          <div itemprop="articleBody" class="post-content js-lh-article">
+			  <p><b>Сегодня в студии — ведущий специалист НИИ Ревматологии, представитель аптечных сетей и главный ревматолог России.</b></p>
+			  <p>Ведущий специалист НИИ Ревматологии Андрей Каратеев</p>
+			   <center>
+              <img src="./files/1.jpg" alt="">
+            </center> 
+			  <p><b><i>Ольга Скабеева:</i></b> <b>"Андрей Борисович, как вы оцениваете опасность заболеваний суставов?"</b></p>
+			   <p><u><u><b>Андрей Каратеев</b></u></u>: Многие считают, что заболевания суставов — это не слишком опасный вид болезней, который грозит только хрустом рук с ногами и болью. Это в корне неверное мнение. Заболевания суставов даже на раннем этапе развития способны <b>превратить человека в инвалида.</b> </p>
+				  <p>  <b>Во-первых</b>, любая болезнь суставов — это <b>предраковое заболевание</b>. Даже на раннем этапе артроз или артрит могут привести к образованию раковой опухоли. Чаще всего это рак костного мозга или рак крови. Оба крайне сложно излечимые и смертельные.</p>
+          <p><b>Во-вторых</b>, заболевания суставов часто приводят к инвалидности. Внезапно переставшая работать рука, отказавшая нога или полный паралич — весьма частые осложнения, возникающие у пациентов. Паралич обрекает больного на существование в качестве <b>"разумного овоща".</b></p>
+          <p><b>В-третьих</b>, банальный остеохондроз может "замкнуть" нервные окончания в позвоночнике и вызвать <b>осложнения любого внутреннего органа</b> — от печени до сердца. Спинной мозг — основа центральной нервной системы. При её нарушениях, возникают серьезные сбои в работе внутренних органов. А остеоартрит, он же артроз, часто приводит к сепсису и заражению крови. </p>
+			   <p><b><i>Ольга Скабеева:</i></b> <b> "То есть каждый, у кого болят суставы, находится в зоне высокого риска осложнений с летальным исходом?"</b></p>
+			   <p><u><u><b>Андрей Каратеев</b></u></u>: Среди врачей, заболевания суставов считаются <b>одними из самых опасных.</b> В отличие от многих других болезней, возникающих у человека, они ведут не к каким-то временным проблемам со здоровьем, а развиваются только по нарастающей, постепенно сводя человека в могилу. <b>Больные суставы - медленные убийцы.</b> Как бомба замедленного действия, которая не обязательно сработает сразу же, но с вероятностью в 100% рано или поздно взорвётся. </p>
+			   <p>К тому же, ситуация с раком суставов такова, что на первой стадии больной не может отличить боли из-за раковой опухоли от обычных симптомов болезни. Он осознаёт проблему, когда метастазы уже пошли по организму и лечить его по сути уже поздно.</p>
+        <p>Каждый год в России сотни тысяч людей умирают от рака костного мозга и крови, спровоцированных именно болезнями суставов. Каждый из них ужасно мучается. В особой зоне риска находятся <b>больные старше 40 лет.</b> Самое страшное в том, что до недавнего времени не существовало ни одного эффективного способа предотвратить начало рака. Если у человека имелось заболевание суставов в средней или тяжелой стадии, то максимум, что ему могла предложить медицина — это лекарства, снимающие симптоматику. <b>Не более того.</b> </p>				   
+				<p><b><i>Ольга Скабеева:</i></b> <b>"Каким образом сейчас лечат заболевания суставов?"</b></p>
+			 <p><u><u><b>Андрей Каратеев</b></u></u>:   В большинстве случаев пациентам предлагают лечение хондопротекторами и иными препаратами, которые при самом хорошем результате могут затормозить развитие того или иного заболевания, не более того. В ряде случаев людей лечат уколами или при помощи хирургического вмешательства. </p>
+			 <p>Первый вариант (хондопротекторы и другие таблетки) <b>по сути бесполезен.</b> Второй и третий — <b>чрезвычайно опасны.</b> Уколы способны только убрать болевые ощущения, при этом никаким образом не оказывая влияния на саму болезнь. В итоге человек <b>не чувствует боли и считает, что у него всё в порядке</b>, тогда как в организме уже может расти раковая опухоль. А операции на суставах вообще очень часто заканчиваются инвалидностью или иными тяжелыми осложнениями. Их показано проводить только в безнадежных случаях. </p>
+			  <p> Именно по причине низкой эффективности классического подхода к лечению, умы специалистов всегда занимала разработка препарата, позволяющего действительно лечить больные суставы и возвращать людям здоровье. В Национальном НИИ ревматологии Российской Федерации мы создали первое в своём роде лекарство, которое способное <b>действительно восстанавливать суставы.</b> Но до сих пор не может попасть на полки аптек.</p>
+        <p><b><i>Ольга Скабеева:</i></b> <b>"Вы можете рассказать о нём?"</b></p>
+       <p><u><u><b>Андрей Каратеев</b></u></u>: Конечно. Это «Хондронекс» — уникальный препарат, у которого пока нет аналогов как за рубежом, так и в России. По своей форме это гель, который создан на базе хондроитина и еще десятка компонентов. Подобную формулу не использует больше <b>ни один из препаратов.</b>  Хондронекс это - лекарственное средство нового поколения, на данный момент единственный эффективный препарат в лечении артрозов и хондрозов разного генеза. Благодаря своим лечебным свойствам, он в десятки раз превосходит все известные средства лечения. При этом не имеет побочных эффектов, вырабатывает иммунитет к возникновению новых воспалений хрящевой ткани и суставов, что позволяет исключить случаи повторных рецидивов. Препарат абсолютно новый, поэтому эффективно борется со всеми видами заболеваний суставов. <b>Его основная задача – создание новой хрящевой и костной ткани.</b> Вы можете себе представить биологическую силу подобного механизма? Ничего более эффективного для активизации кровообращения в костях и суставах в природе пока не существует. </p>
+       <p>Вот его фото:</p>
+	   <p><img src="./files/a3.jpg" style="width: 100%; max-width: 500px;"></p>
+       <p>&nbsp; </p>
+       <p>«Хондронекс» прошёл клинические испытания и показал на них чрезвычайно высокие показатели эффективности. Он помогает даже в <b>запущенных и тяжелых случаях,</b> восстанавливая хрящевую ткань и возвращая суставы в здоровое состояние. По своим показателям лекарство уникально. Ни один другой препарат неспособен эффективно восстановить больные суставы, вернув человека в полностью здоровое состояние. </p>
+       <p>Помимо России, «Хондронекс» успешно завершил клинические испытания в <b>Швейцарии и США.</b> Но пока мы не обеспечим им всё население России, он будет доступен только внутри страны. </p>
+			 <p><b><i>Ольга Скабеева:</i></b> <b>  "Вопрос к генеральному директору аптечной сети ГК Эркафарм, Анастасии Карповой, которая присутствует сегодня здесь. Почему этого препарата нет в аптеках?"</b></p>
+			     <center>
+              <img src="./files/2.jpg" alt="">
+            </center> 
+			  <p><u><u><b>Анастасия Карпова:</b></u></u> Видимо, по той простой причине, что производитель не согласовал какие-то моменты в ходе переговоров. Я не знаю случаев, когда кто-то из коллег отказывался принять к продаже лекарство, которое сертифицировано в России, прошло клинические испытания и тем более показывает настолько хорошие результаты. Скорее всего проблема в каких-то технических моментах.</p>
+<p><u><u><b>Андрей Каратеев</b></u></u>: Не надо врать на всю страну! Я сам присутствовал на переговорах почти со всеми аптечными сетями. И там открытым текстом говорили, что <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b>"Хондронекс"</b></a> не хотят выставлять на полки <b>из-за цены.</b> Конкретно ваши сотрудники предлагали поставить на него цену за курс лечения в 30 000 рублей! И тогда его бы стали продавать в аптеках. Никто из аптек не хочет его продавать у себя, потому что мы его сейчас выдаем <b>почти бесплатно</b> при поддержке льготной программы. И настаивали на сохранении такой же ценовой политики. Аптеки — это бизнес и им нужна прибыль, в данном случае сверхприбыль. <b>А на здоровье людей им плевать.</b></p>
+<p><b><i>Ольга Скабеева:</i></b> <b>"Анастасия Геннадьевна, насколько это соответствует истине?"</b></p>
+<p><u><u><b>Анастасия Карпова:</b></u></u> Возможно на переговорах упоминался момент ценообразования. Но вы же понимаете, что аптечные сети — это частное предприятие. И мы берем к себе на продажу лекарства исключительно на свое усмотрение. Принудительно нас заставить что-то продавать невозможно. А еще нам надо платить зарплату сотрудникам, фармацевтам в аптеках, персоналу в офисе и так далее. Мы не можем позволить себе продавать какое-то лекарство в убыток. А то, что предлагал нам НИИ, это же не бизнес, это скорее какой-то социализм. Выставить на продажу препарат, который не принесет прибыли сам по себе, да еще и обрушит продажи всех лекарств для лечения суставов. Тут, как говорится, ничего личного, <b>только бизнес.</b></p>
+<p><u><u><b>Андрей Каратеев</b></u></u>: То есть вы признаете, что на самом деле весь вопрос заключался в вашем желании получить сверхприбыль. И вы ошибаетесь по поводу "ничего личного". Для каждого <b>пенсионера с больными суставами</b>, это как раз личное. Вы не даете им нормально лечиться из-за желания заработать денег! А потом говорите, что это просто бизнес. Какой же это бизнес, если речь идет о жизнях людей. Вы не бетон для стройки продаете, а лекарства, от которых зависит здоровье и жизни людей!</p>
+			  <p><b><i>Ольга Скабеева:</i></b> <b>"Андрей Борисович, а как вы сами распространяете «Хондронекс»?"</b></p>
+			  <p><u><u><b>Андрей Каратеев</b></u></u>: Препарат распространяется напрямую от нашего НИИ. Мы не занимаемся коммерческой деятельностью и не продаём препарат, а <b>распространяем его с возможностью получить скидку — <font color="red">вплоть до 100%</font>, в рамках антимонопольного законодательства</b>.</p>
+<p>Именно в этом и состоит основной конфликт с аптечными сетями. Они хотят зарабатывать на больных людях, выжимая из них максимум денег. Старые и неэффективные лекарства для этого подходят идеально. Тогда как наш препарат мало того, что решает проблему навсегда, так ещё и распространяется с возможностью получить его с огромной скидкой. В производстве себестоимость упаковки препарата составляет около 4500 рублей, но остальная часть компенсируется из бюджета НИИ и государства.</p>
+<p>Мы, впрочем, нашли выход из положения — специалисты НИИ создали специальный розыгрыш, приняв участие в котором можно получить скидку до 100% и  оставить заявку на <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b>"Хондронекс"</b></a>. Всё, что нужно сделать — это просто <b>получить скидку и оставить свое имя и контактные данные в появившейся форме</b>. После этого с вами свяжется консультант для уточнения удобного времени доставки. Мы постарались сделать все максимально просто, чтобы каждый мог получить лекарство, даже если раньше ничего не заказывал через интернет.</p>
+    <p><b><i>Ольга Скабеева:</i></b> <b>"Вопрос к еще одному нашему гостю, Евгению Насонову, главному ревматологу Российской Федерации. Как так получается, что уникальное лекарство созданное в России и распространяемое со скидкой до 100% не доходит до населения? Это какой-то заговор против населения? Почему вы не содействуете?"</b></p>
+   <center>
+              <img src="./files/3.jpg" alt="">
+            </center> 
+<p><u><u><b>Евгений Насонов</b></u></u>: Ольга, я хочу заметить, что несмотря на должность, президент Ассоциации ревматологов России в основном занимается координацией научных исследований и стратегическими вопросами. Я не имею никакого влияния на коммерческие аптечные сети. Всё, что я могу сделать — это рекомендовать им какой-то препарат. Безусловно, <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b>"Хондронекс"</b></a> был рекомендован с моей стороны. Собственно всё научное сообщество понимает, какой колоссальный прорыв в области лечения суставов был совершен. К моему глубокому сожалению, аптечные сети никаким образом не среагировали. Что в целом понятно и логично, так как в случае массового распространения <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b>«Хондронекс»</b></a>, они понесут многомиллионные убытки.</p>
+<p>Сейчас мы прорабатываем вопрос о распространении <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b>«Хондронекс»</b></a> через государственные клиники и больницы. Там правда присутствуют бюрократические заморочки, но надеюсь, что в течение ближайших 10-12 месяцев вопрос будет решен.</p>
+<p><b><i>Ольга Скабеева:</i></b> <b>"Получается, что до появления «Хондронекс» в клиниках пройдёт ещё как минимум год. Что делать людям, пока он не появится у врачей?"</b></p>
+<p><u><u><b>Евгений Насонов</b></u></u> У НИИ Ревматологии есть <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b>официальный розыгрыш</b></a> препарата, приняв участие в котором, каждый может получить скидку, оставить заявку и получить <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b>«Хондронекс»</b></a> со скидкой до 100%. Пока единственный выход — это воспользоваться им. Тем более, что насколько я понял, они доставляют препарат весьма быстро и в состоянии охватить любое количество людей.</p>
+<p><u><u><b>Андрей Каратеев</b></u></u>: Небольшая ремарка по поводу "любого количества людей". На данный момент времени у НИИ не хватает объёмов производства для того, чтобы охватить всю страну. Поэтому мы выдаем партии препарата по мере их производства. На данный момент мы выдаем остаток в размере 700 упаковок <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><b>«Хондронекс»</b></a>, которые вы можете получить <font color="red"><b>со скидкой до 100%</b></font>. Для наращивания производства нам еще потребуется время. </p>
+			  <p><b><i>Ольга Скабеева:</i></b> <b>"Что вы можете сказать на прощание нашим зрителям?"</b></p>
+			  <p><u><u><b>Андрей Каратеев</b></u></u>: Я хочу обратить внимание читателей, что заболевания спины и суставов «молодеют», и <b>даже слабые периодичные боли — повод обратить внимание на проблему</b>. Не надо дожидаться, пока появится рак костного мозга или крови и вы будете просто ждать своей смерти.</p>
+<hr>                            
+<br>
+            <div class="rub-ramka">
+            <i>Важно! Был сделан вывод, что <strong><script>d = new Date();p = new Date(d.getTime() + (86400 * 1000 * 3));
+                            monthA = "январь,февраль,март,апрель,май,июнь,июль,август,сентябрь,октябрь,ноябрь,декабрь".split(",");
+                            document.write(monthA[p.getMonth()]);</script></strong>
+ — <b>лучшее время для начала лечения болезней позвоночника и суставов.</b> Благодаря стабилизации средней температуры, ускоряется обмен веществ, усиливается циркуляция крови в организме, увеличивается приток крови и кислорода во внутренние органы, эффект от использования препарата возрастает. Излечение от болей в спине и суставах, и также сопутствующих болезней происходит на 58% быстрее, чем это происходило бы в другое время года. Восстановление функций организма происходит на 100% в течение всего курса лечения.  </i></div>
+<center> <h2><b>А специально для наших читателей мы размещаем официальный розыгрыш скидок на препарат по льготной программе чуть ниже. </b></h2></center>
+
+
+<style>
+.left_count {
+    background: red;
+    padding: 23px;
+    margin: 12px 0;
+    width: 178px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000, 0 -1px 0 #000, 0 1px 0 #000, 0 1px 0 #000, -1px 0 0 #000, 1px 0 0 #000, -1px 0 0 #000, 1px 0 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 32px!important;
+    border-radius: 5px;
+}
+</style>
+
+
+<p class="text-left post-meta" style="color: rgb(0,0,0);font-family: Lora, serif;padding: 10px;font-size: 18px;margin: 0px 0px 20px;border-left: 2px solid rgb(70,130,180);padding-left: 10px;margin-top: 10px;">Акция проходит <strong>до&nbsp;<script type="text/javascript">
+ d = new Date(); p = new Date(d.getTime() + 0*86400000);
+ monthA = 'января ,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(',');
+ document.write(p.getDate() - 0 + ' ' + monthA[p.getMonth()] + ' '+p.getFullYear());
+			</script></strong>&nbsp;включительно. На каждый этап выделяется 30 000 бесплатных единиц препарата. И он полностью кончается за 3-4 недели. И это при том, что нет никакой рекламы по ТВ и радио. Люди передают
+друг другу информацию, советуют друзьям и родственникам. Даже для нас стало неожиданностью, что информация об Хондронексе будет так быстро распространяться.<br></p>
+<p class="text-left post-meta" style="color: rgb(0,0,0);font-family: Lora, serif;margin-top: 10px;margin-bottom: 10px;">Поэтому, если вам повезло и вы успеваете до указанной даты, я рекомендую оставить заявку на бесплатный Хондронекс как можно скорее. Повторной программы в этом году уже точно не будет.<br></p>
+
+<center><h2 style="border: none!important;
+    color: red!important;
+    font-size: 21px;" id="counter_product">На <b><u><script type="text/javascript">
+ d = new Date(); p = new Date(d.getTime() + 0*86400000);
+ monthA = 'января ,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(',');
+ document.write(p.getDate() - 0 + ' ' + monthA[p.getMonth()] + ' '+p.getFullYear());
+			</script></u></b> остаток препарата по льготной программе: <center><h3 class="left_count"><b class="prod_left_val left-pack">43</b>шт.</h3></center></h2></center>
+			
+			
+			<style>
+.bilet {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    border: 4px solid rgb(16, 80, 0);
+    border-radius: 5px;
+    background: transparent linear-gradient(rgb(255, 255, 255), rgb(139, 195, 124)) repeat scroll 0% 0%;
+}
+.text-column {
+    flex: 2 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+.erase_text, .text-column {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+@media screen and (min-width: 550px){
+.gerbmobile {
+    display: none;
+}}
+.text-column p {
+    margin-bottom: 0px;
+}
+.logo1 {
+    background: transparent url(files/product.png) no-repeat scroll center center;
+    width: 250px;
+    height: 260px;
+    background-size: contain;
+}
+.erase_column {
+    flex: 3 1 0%;
+    padding: 1em;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.erase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.erase_text, .text-column {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.arrow {
+    background: transparent url(files/arrow.png) no-repeat scroll center center;
+    width: 70px;
+    height: 65px;
+    align-self: center;
+    margin: 1em;
+}
+#square {
+    background: rgb(150, 149, 149) none repeat scroll 0% 0%;
+    cursor: pointer;
+}
+#square, #square2, .qqq {
+    width: 200px;
+    height: 50px;
+    border-radius: 3em;
+    align-self: center;
+}
+.qqq {
+    outline: medium none;
+    background: transparent none repeat scroll 0% 0%;
+    border: 1px solid rgb(150, 149, 149);
+}
+#square, #square2, .qqq {
+    width: 200px;
+    height: 50px;
+    border-radius: 3em;
+    align-self: center;
+}
+#square2 {
+    background: transparent url(files/discount.png) no-repeat scroll center center;
+    display: none;
+}
+#square, #square2, .qqq {
+    width: 200px;
+    height: 50px;
+    border-radius: 3em;
+    align-self: center;
+}
+.order_block h3 {
+    font: 700 18px Arial!important;
+    background: 0 0;
+}
+.time_remains {
+    font-size: 1.1em;
+    color: red;
+    font-weight: 700;
+}
+.spin-result-wrapper {
+    display: none;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,.6);
+    text-align: center;
+}
+.pop-up-window {
+    position: relative;
+    max-width: 400px;
+    right: 0;
+    left: 0;
+    top: 40%;
+    margin: 0 auto;
+    background: #fff none repeat scroll 0% 0%;
+    text-align: center;
+    padding: 10px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    animation: .7s ease 0s normal none 1 running pop-up-appear;
+}
+.close-popup {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(cross.svg);
+    background-size: 100%;
+    top: -40px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+    right: -40px;
+    cursor: pointer;
+}
+.pop-up-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.pop-up-text {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center!important;
+}
+.pop-up-button {
+    text-transform: uppercase;
+    text-decoration: none!important;
+    padding: 10px 20%;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #71c341;
+    color: #fff!important;
+    border: medium;
+    cursor: pointer;
+    outline: medium;
+}
+@media screen and (min-width: 550px){
+.gerbmobile {
+    display: none;
+}}
+</style>
+<div class="bilet" id="bilet">
+<div class="text-column"><img class="gerbmobile" src="./files/gerb.png" style="width: 100%; max-width: 50px;">
+<p>Национальный лотерейный билет<br>№1000 8976 2456 654 <img class="gerbpk" src="./files/gerb.png" style="width: 100%; max-width: 50px;"></p>
+<p class="logo1"></p>
+</div>
+<div class="erase_column">
+<div class="erase">
+<div class="erase_text">Нажмите на защитный слой, чтобы стереть его</div>
+<div class="arrow"></div>
+<div id="square"><button class="qqq" onclick="replace();return false"></button></div>
+<div id="square2"></div>
+</div>
+<div class="blabla">
+<p>Билет разыгрывает скидку до 100% только на препарат «Хондронекс»</p>
+<p>Национальная лотерея по распоряжению Медицинского Фонда России</p>
+</div>
+</div>
+</div>
+
+<div class="order_block" style="display: none;">
+<center>
+<div class="imgg"><img style="width: 100%; max-width:400px" src="./files/product.png"></div>
+<h3>Все что Вам нужно — это ввести имя и номер телефона.<br>Поторопитесь! У Вас осталось времени:<br><span class="time_remains" id="min">10</span> : <span class="time_remains" id="sec">00</span></h3>
+
+		<iframe style="width: 95%;max-width:620px;height: 327px;" src="https://hondronex.com/free/frame/"></iframe>
+</center>
+</div>
+
+<div class="spin-result-wrapper" style="display: none;">
+<div class="pop-up-window">
+<div class="close-popup"></div>
+<span class="pop-up-heading">Поздравляем!</span>
+<p class="ruletka-p pop-up-text">Вы можете забрать средство <span class="danger-text">бесплатно!</span></p>
+<a class="pop-up-button" href="">OK</a>
+</div>
+</div>
+
+<script type="text/javascript">
+	var resultWrapper = document.querySelector('.spin-result-wrapper');
+
+	function replace() {
+		document.getElementById("square").style.display = "none";
+		document.getElementById("square2").style.display = "block";
+		setTimeout(function() {
+			resultWrapper.style.display = "block";
+		}, 1000);
+		setTimeout(function() {
+			$('.bilet').slideUp();
+			$('.order_block').slideDown();
+			start_timer();
+		}, 3500);
+	}
+	var closePopup = document.querySelector('.close-popup');
+	$('.close-popup, .pop-up-button').click(function(e) {
+		e.preventDefault();
+		$('.spin-result-wrapper').fadeOut();
+		var top = $('#bilet').offset().top;
+		$('body,html').animate({
+			scrollTop: top
+		}, 800);
+	});
+</script>
+<script>
+
+var resultWrapper = document.querySelector('.spin-result-wrapper');
+var wheel = document.querySelector('.wheel-img');
+
+var link = new URL(window.location.href);
+
+$(function() {
+  $("a[href^='#']").click(function() {
+    var _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+  });
+  $('input[value="Ð£Ð·Ð½Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´Ñ€Ð¾Ð±Ð½ÐµÐµ"], input[value="ÐŸÑ€Ð¸Ð½ÑÑ‚ÑŒ ÑƒÑ‡Ð°ÑÑ‚Ð¸Ðµ Ð² Ñ€Ð¾Ð·Ñ‹Ð³Ñ€Ñ‹ÑˆÐµ"]').click(function() {
+    $('.eeee, .fadepopup').css('display', 'none');
+  });
+});
+
+function spin() {
+  if (!wheel.classList.contains('rotated')) {
+    wheel.classList.add('super-rotation');
+    setTimeout(function() {
+      resultWrapper.style.display = "block";
+    }, 8000);
+    setTimeout(function() {
+      $('.spin-wrapper').slideUp();
+      $('.order_block').slideDown();
+      start_timer();
+    }, 10000);
+    wheel.classList.add('rotated');
+  }
+}
+
+var time = 600;
+var intr;
+function start_timer() {
+  intr = setInterval(tick, 1000);
+}
+
+function tick() {
+  time = time-1;
+  var mins = Math.floor(time/60);
+  var secs = time - mins*60;
+  if( mins == 0 && secs == 0 ) {
+    clearInterval(intr);
+  }
+  secs = secs >= 10 ? secs : "0"+secs;
+  $("#min").html("0"+mins);
+  $("#sec").html(secs);
+}
+</script>
+
+
+	
+	<style>
+.like-block { display: block; width: 95.7%; border: 2px solid rgb(230, 230, 230); padding: 0px 2% 2%; margin: 3% 0px; border-radius: 3px; }
+.like-block img { display: block; width: auto; }
+.vk-container { font-family: tahoma,arial,verdana,sans-serif; font-size: 15px; color: black; text-decoration: none; }
+.vk-header { background: rgb(218, 226, 232) none repeat scroll 0% 0%; padding: 4px 4px 4px 6px; margin-bottom: 10px; }
+.vk-logo { background: transparent none no-repeat scroll 0% 0%; width: 16px; height: 16px; float: right; margin-top: -1px; }
+.vk-header-text { padding: 2px 3px 1px; line-height: 100%; color: rgb(69, 104, 142); font-weight: bold; }
+.vk-comment, .vk-comment { margin-bottom: 15px; position: relative; border-bottom: 1px solid rgb(218, 225, 232); padding-bottom: 15px; }
+.vk-avatar img { float: left; margin-right: 10px; }
+.vk-comment-name { color: rgb(43, 88, 122); font-weight: bold; font-size: 12px; }
+.vk-comment-text { margin-left: 60px; }
+.vk-comment-date { margin-left: 60px; color: rgb(153, 153, 153); }
+.vk-logo {
+    background: transparent none no-repeat scroll 0% 0%;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: -1px;
+}
+
+.vk-header-text {
+    padding: 2px 3px 1px;
+    line-height: 100%;
+    color: rgb(69, 104, 142);
+    font-weight: bold;
+}
+
+.vk-avatar img {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.vk-comment, .vk-comment {
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid rgb(218, 225, 232);
+    padding-bottom: 15px;
+}
+
+.vk-comment:last-child {
+    border-bottom: 0px none;
+}
+
+.vk-comment-name {
+    color: rgb(43, 88, 122);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.vk-comment-text {
+    margin-left: 60px;
+}
+
+.vk-comment-text img{
+	margin-top: 10px;
+}
+
+.vk-comment-date {
+    margin-left: 60px;
+    color: rgb(153, 153, 153);
+}
+.vk-comment p{margin:0 !important;}
+@media only screen and (max-width: 500px)  {
+	.vk-comment-text img{
+		width:100%;
+	}
+}
+
+</style>
+<div class="vk-container">
+	<div class="vk-header">
+	  <div class="vk-logo"></div>
+	  <div class="vk-header-text"><span class="comment-count lt89">194 комментария</span></div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/87.jpg"></div>
+	  <div class="vk-comment-name lt90">Кирилл Анисимов / Самара</div>
+	  <div class="vk-comment-text">
+		<p class="lt91">Ура! Вошел в число счастливчиков, успел заказать <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс<span></span></a>! Удивительно
+		  просто!		</p>
+		<p></p>
+		<center>
+		</center>
+		<center>
+		</center>
+	  </div>
+	  <div class="vk-comment-date lt93">12 минут назад </div>
+	</div>
+	<!-- NEW -->
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/90.jpg"></div>
+	  <div class="vk-comment-name lt94">Алла Иванова / <script>document.write(((YMaps.location.city)?(YMaps.location.city):'Москва'));</script></div>
+	  <div class="vk-comment-text lt95">
+		<p>Все верно, заказали курс лечения и получили упаковку Хондронекса <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0"><span class="price__new"><span class="new_price_val">бесплатно</span></span></a>. Мы давно пользуемся дома Хондронексом, но покупали его
+		  сильно дороже.		</p>
+		<img  src="../files/a5.jpg" alt="">
+	  </div>
+	  <div class="vk-comment-date lt96">17 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/89.jpg"></div>
+	  <div class="vk-comment-name lt97">Ольга Васильевна / Ростов </div>
+	  <div class="vk-comment-text lt98">
+		<p>Я обязательно попробую <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a>, потому что как дачный сезон - сразу руки болят, пальцы не согнуть.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt99">19 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/1.jpg"></div>
+	  <div class="vk-comment-name lt103">Константин505 / Москва</div>
+	  <div class="vk-comment-text lt104">
+		<p>Я просто покажу мои руки до <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a> и после. Судите сами
+		  <br><img style="width:100%" src="../files/cimg1.png" alt="">
+		  <img  src="../files/a7.jpg" alt="">
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt105">25 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/86.jpg"></div>
+	  <div class="vk-comment-name lt106">Сергей С. / Новосибирск</div>
+	  <div class="vk-comment-text lt107">
+		<p>Заказал <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a>, отвезу своим в деревню, старики давно с ногами мучаются.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt108">27 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/82.jpg"></div>
+	  <div class="vk-comment-name lt109">Лариса / Абакан</div>
+	  <div class="vk-comment-text lt110">
+		<p>Хорошо что успела заказать по этой цене! Скинула ссылку подруге, а оно уже подорожало…</p>
+	  </div>
+	  <div class="vk-comment-date lt111">30 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/85.jpg"></div>
+	  <div class="vk-comment-name lt118">Ольга Колесникова/ <script>document.write(((YMaps.location.city)?(YMaps.location.city):'Москва'));</script></div>
+	  <div class="vk-comment-text lt119">
+		<p>Вчера забрала на почте 2 курса <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a>, маме и себе. Гель прозрачный, одежду не пачкает, вот на фото он.</p>
+	  <img  src="../files/a11.jpg" alt="">	  </div>
+	  <div class="vk-comment-date lt120">34 минуты назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/80.jpg"></div>
+	  <div class="vk-comment-name lt115">Лолла83 / Саратов</div>
+	  <div class="vk-comment-text lt116">Я много лет в спорте и мой врач давно советовал <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a>. Спортивные врачи используют его уже несколько лет.</div>
+	  <div class="vk-comment-date lt117">39 минут назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/101.jpg"></div>
+	  <div class="vk-comment-name lt112">Ольга Мельник / Пермь</div>
+	  <div class="vk-comment-text lt113">
+		<p>Мне <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a> очень помог! Колено опухло, не могла ногу согнуть. Отец откуда-то привез Хондронекс и слава Богу! Смотрите разницу:
+		  <br><img style="width:100%" src="../files/cimg2.png" alt=""></p>
+	  </div>
+	  <div class="vk-comment-date lt114">49 минуты назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/o16.jpg"></div>
+	  <div class="vk-comment-name lt124">Софья Котова / Вологда</div>
+	  <div class="vk-comment-text lt125">
+		<p>Поделитесь пожалуйста, кто пользовался? Есть результат?
+		</p>
+		<div style="margin-left: 0;" class="vk-comment-date lt126">час назад</div>
+	  </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/21.jpg"></div>
+	  <div class="vk-comment-name lt127">Валя Валечка / Уфа  </div>
+	  <div class="vk-comment-text lt128">
+		<p>Брала для лечения коленей, первое время ничего не заметно, но на второй день спало воспаление и отек. Боль еще есть, но я продолжаю пользоваться, думаю такими темпами скоро приду в норму.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt132">час назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/c1.jpg"></div>
+	  <div class="vk-comment-name lt130">Лидия Сергеевна / Томск </div>
+	  <div class="vk-comment-text lt131">Господи, ну неужели кто-то сделал средство от разрушения суставов!! Я много лет с артритом и доктор прав, с каждым годов все хуже и хуже!
+	  </div>
+	  <div class="vk-comment-date lt132">час назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/2.jpg"></div>
+	  <div class="vk-comment-name lt133">Роман Вихрь / Липецк </div>
+	  <div class="vk-comment-text lt134">Я заказал <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a> для бабушки. Больно смотреть как она трудится своими изуродованными руками. Если бы я только раньше знал, как ей можно помочь!
+	    <center><img  src="../files/a9.jpg" alt=""></center>
+	  </div>
+	  <div class="vk-comment-date lt135">час назад</div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/o23.jpg"></div>
+	  <div class="vk-comment-name lt136">Серафима22 / Гомель</div>
+	  <div class="vk-comment-text lt137">Нужно успеть пока идет акция!
+	  </div>
+	  <div class="vk-comment-date lt138">два часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/o21.jpg"></div>
+	  <div class="vk-comment-name lt139">Вера Михайловна / Санкт-Петербург </div>
+	  <div class="vk-comment-text lt140">Вчера забрала <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a> на почте. У меня проблемы со спиной, но боль уже отступила! Ни за что с ним теперь не расстанусь!
+	  </div>
+	  <div class="vk-comment-date lt141">два часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/4.jpg"></div>
+	  <div class="vk-comment-name lt142">Олег Ефимов / Москва</div>
+	  <div class="vk-comment-text lt143">
+		<p>У меня немного не стандартная ситуация. По молодости сунул руку в циркулярку, лишился фаланг на пальцах... Сейчас, особенно в плохую погоду сильно ноет, врачи говорили, что это фантомные боли, они не лечатся, только обезболивающие пить. Начитался, что определенные растения помогают, действительно помогали но ненадолго, в итоге наткнулся на описание  <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекса</a>, заказал, попробовал, чудеса, после недели применения боли ушли, но буду мазать еще, как написано в	инструкции.	</p>
+		<center><img  src="../files/a10.jpg" alt=""></center>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/c2.jpg"></div>
+	  <div class="vk-comment-name lt142">Маруся495 / Краснодар</div>
+	  <div class="vk-comment-text lt143">
+		<p>Моя мама буквально спаслась благодаря <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0">Хондронекс</a>! как тут и написано, после воспаления болезнь развивалась стремительно, и прошлой зимой мама буквально перестала ходить! Хондронекс тогда очень
+		  помог. Сейчас пока скидка закажу еще 2 упаковки, пусть лучше будет под рукой, Препарат дорогой, но он того стоит!
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/c3.jpg"></div>
+	  <div class="vk-comment-name lt142">Олеся Суровская / Новгород</div>
+	  <div class="vk-comment-text lt143">
+		<p>Будьте внимательны! Я заказала на другом сайте и посылка просто не пришла! Хорошо, что деньги вперед не взяли. Очень обидно было ждать напрасно.
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/20.jpg"></div>
+	  <div class="vk-comment-name lt142">Илья Супонев / Владимир</div>
+	  <div class="vk-comment-text lt143">
+		<p>Вовремя я эту статью увидел. Колени ноют вторую неделю, очень боюсь развития болезни
+		</p>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+	<div class="vk-comment">
+	  <div class="vk-avatar"><img src="../files/c4.jpg"></div>
+	  <div class="vk-comment-name lt142">Марина Б. / Хабаровск</div>
+	  <div class="vk-comment-text lt143">
+		<p>Заказала, пришло почтой, шло довольно долго, но это же наша почта! Интересно теперь попробовать!		</p>
+		<center><img  src="../files/a8.jpg" alt=""></center>
+	  </div>
+	  <div class="vk-comment-date lt144">3 часа назад </div>
+	</div>
+</div>
+      
+
+         <br>
+          </div>
+        </div>
+      </div>
+ <div class="single__sidebar--wrapper single-sidebar side-banner--wrapper single__fix-width-sidebar">       
+          <div class="single__banner--wrapper side-banner">  
+            <div id="сastbreeder">    
+              <div id="lifehacker_widget_week-5" class="widget widget-week">
+                <h2 class="widgettitle">Лучшие секции</h2>
+                <div id="wwContainer" class="show-views">  
+                  <div class="widget-week__views"> 
+                      <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0" class="widget-week__item top__item">
+                        <div class="top__image">
+                          <span class="top__order">1</span>                        </div>
+                        <div class="top__text">
+                          <div class="title">"Медицинские институты Европы - отличия в подходах"</div>
+                        </div>
+                      </a>  
+                      <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0" class="widget-week__item top__item">
+                        <div class="top__image">
+                          <span class="top__order">2</span>                        </div>
+                        <div class="top__text">
+                          <div class="title">"Специфика лечения пациентов с онкологией"</div>
+                        </div>
+                      </a> 
+                      <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0" class="widget-week__item top__item">
+                        <div class="top__image">
+                          <span class="top__order">3</span>                        </div>
+                        <div class="top__text">
+                          <div class="title">"Фармацевтика современной России. Проблемы развития."</div>
+                        </div>
+                      </a>
+                      <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0" class="widget-week__item top__item">
+                        <div class="top__image">
+                          <span class="top__order">4</span>                        </div>
+                        <div class="top__text">
+                          <div class="title">"Одиночки против корпораций - как выжить ученым в современной фармацевтике"</div>
+                        </div>
+                      </a>
+                      <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0" class="widget-week__item top__item">
+                        <div class="top__image">
+                          <span class="top__order">5</span>                        </div>
+                        <div class="top__text">
+                          <div class="title">"Медицинская этика и противоречия. С чем придется столкнуться врачам в XXI веке"</div>
+                        </div>
+                      </a>                  </div>           
+                </div>
+              </div>
+            </div>
+      </div>
+      </div>
+      </div><i>
+      <div id="content-bottom">        </div>
+  	</i></div><i>
+    <div class="footer">
+      <div class="footer-wrapper">        
+        <div class="footer-right">  
+          <div class="footer-right-copy">© 2020</div>
+          <div class="footer__warning-container">
+            <div class="footer-right-16-years">
+              Дисклеймер: указанная на странице информация является маркетинговой акцией.<br>
+              Логотипы и наименования являются собственностью их владельцев.<br>
+              На правах рекламы.<br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</i>
+
+
+
+
+
+
+<div id="hiddenDiv" style="display:none;"></div>
+<div style="" class="fadepopup actsss">
+    <div id="kmacb-form" class="modalx kmacb-form kmacb-form2 eoxp">
+        <div class="modal-block">
+            <div class="oui">
+                <div class="ouimain">
+                    <p class="ouimainp">Вы из г.<span class="geocity">Барнаул</span>? Подождите!</p>
+                    <div class="ouimain-text-img">
+                        <div class="ouimain-img">
+                            <img src="./files/tov.png">                        </div>
+                        <div class="ouimain-text">
+                            <p>Для Вас сейчас действует специальное ограниченное предложение</p>
+                            <p>
+                                Только до <script>d=new Date();p=new Date(d.getTime()+(86400*1000*1));monthA="января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря".split(",");document.write(p.getDate()+" "+monthA[p.getMonth()]+" "+p.getFullYear()) + " г.";</script> вы можете получить Хондронекс по акции!                            </p>
+                        </div>
+                    </div>
+
+                    <a href="http://hondronex.com/?aid=0&ids=443&sub1=0&sub2=0&sub3=0&sub4=0" style="display: block;"><input type="button" value="Узнать подробнее"></a>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="eeee actsss" style="display: block;"></div>
+<script src="./files/boxes_script.js"></script>
+<script src="./files/script.js"></script>
+
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(58760329, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/58760329" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!--LiveInternet counter-->
+<script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+
+";"+Math.random();//--></script>
+<!--/LiveInternet--></body></html>
